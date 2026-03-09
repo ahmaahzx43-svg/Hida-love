@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>هبة ❤️</title>
+
+<style>
+
+body{
+text-align:center;
+font-family:sans-serif;
+background:linear-gradient(#ffd6e7,#ffffff);
+padding-top:80px;
+}
+
+button{
+padding:12px 25px;
+font-size:20px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+background:#ff4d6d;
+color:white;
+}
+
+.heart{
+font-size:90px;
+cursor:pointer;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+.page{
+display:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- الصفحة 1 -->
+<div id="p1">
+<h1>هبة ❤️</h1>
+<button onclick="next('p1','p2')">نعم</button>
+</div>
+
+<!-- الصفحة 2 -->
+<div id="p2" class="page">
+<div class="heart" onclick="next('p2','p3')">❤️</div>
+</div>
+
+<!-- الصفحة 3 -->
+<div id="p3" class="page">
+<h2>تحبيني؟ 🥹</h2>
+<button onclick="loveYes()">نعم</button>
+<button onclick="loveNo()">لا</button>
+</div>
+
+<!-- الصفحة 4 -->
+<div id="p4" class="page">
+<h2>وأنا كمان أحبك يعمري ❤️</h2>
+<button onclick="next('p4','p6')">بعدها</button>
+</div>
+
+<!-- الصفحة 5 -->
+<div id="p5" class="page">
+<h2>لاااا 😐 غصب عنك تحبيني</h2>
+<button onclick="next('p5','p7')">اه احبك</button>
+</div>
+
+<!-- الصفحة 6 -->
+<div id="p6" class="page">
+<h2>يعُمري وأنا أحبك ❤️</h2>
+<button onclick="next('p6','p8')">بعدها</button>
+</div>
+
+<!-- الصفحة 7 -->
+<div id="p7" class="page">
+<h2>يعُمري وأنا أحبك ❤️</h2>
+<button onclick="next('p7','p8')">بعدها</button>
+</div>
+
+<!-- الصفحة 8 -->
+<div id="p8" class="page">
+<h2>طيب ودي أقول شي 😅</h2>
+<button onclick="next('p8','p9')">قول</button>
+</div>
+
+<!-- الصفحة 9 -->
+<div id="p9" class="page">
+<div class="heart" onclick="next('p9','p10')">💌</div>
+<p>اضغطي هنا</p>
+</div>
+
+<!-- الصفحة 10 الرسالة -->
+<div id="p10" class="page">
+
+<p style="font-size:20px;line-height:1.7;padding:20px;">
+
+يا هبة… ❤️<br><br>
+
+بصراحة ما كنت أعرف كيف أكتب هالكلام،
+بس حسيت لازم أقوله.<br><br>
+
+وجودك بحياتي شيء جميل،
+وكل مرة أسمع اسمك أحس بفرحة غريبة.<br><br>
+
+عمري،
+يمكن الكلام بسيط،
+بس شعوري تجاهك كبير.<br><br>
+
+وكل عام وانتي بخير يا هبة 🎂❤️<br>
+اليوم يوم ميلادك،
+واليوم اللي انولد فيه شخص غالي كثير.<br><br>
+
+أتمنى لك أيام مليانة فرح وضحك،
+وتضل ضحكتك الحلوة منورة الدنيا.<br><br>
+
+ومن أحمد…<br>
+الشخص اللي يحبك أكثر مما تتخيلي ❤️
+
+</p>
+
+</div>
+
+
+<script>
+
+function next(hide,show){
+
+document.getElementById(hide).style.display="none";
+document.getElementById(show).style.display="block";
+
+}
+
+function loveYes(){
+next('p3','p4');
+}
+
+function loveNo(){
+next('p3','p5');
+}
+
+</script>
+
+</body>
+</html>
